@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+:root {
+    --primary-color: #0077b6;
+    --primary-color-light: #20affc;
+    --secondary-color: #252525;
+    --secondary-color-light: #636363;
+    --secondary-color-dark: #292929;
+    --border-color: #bceaf3;
+    --padding-inline-section: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.2rem;
+    color: var(--secondary-color)
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    line-height: 10px;
+    color: var(--secondary-color-light);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.primary-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white !important;
+    border-radius: 100px;
+
+}
+
+.primary-btn:hover {
+    background-color: var(--border-color);
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-color) !important;
+}
+
+.sec-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color-light);
+    color: white !important;
+    border-radius: 100px;
+}
+
+.sec-btn:hover {
+    background-color: var(--border-color);
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-color) !important;
+}
+
+.active:hover {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.p-btn {
+    padding: 10px 20px;
+    background-color: #E2DD68;
+    color: var(--secondary-color);
+    border-radius: 200px;
+}
+
+.p-btn:hover {
+    padding: 10px 20px;
+    background-color: #E2DD68;
+    border: 2px solid#aaa62b;
+    color: var(--secondary-color);
+    border-radius: 200px;
+}
+
+/* Nav */
+
+.main-nav {
+    padding: var(--padding-inline-section);
+    font-weight: 700;
+    justify-items: flex-start;
+    transition: 0.2s, ease-out;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #e6e6e6;
+    border-radius: 400px;
+}
+
+
+.company-logo img {
+    width: 150px;
+    margin-top: 20px;
+    margin-left: -50px;
+
+}
+
+
+.nav-links {
+    gap: 40px;
+}
+
+
+.nav-links a {
+    color: var(--secondary-color);
+}
+
+/* hero */
+
+.header {
+    flex-direction: row;
+}
+
+.right-header {
+    padding: var(--padding-inline-section);
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.right-header h1 {
+    max-width: 700px;
+    text-align: left;
+}
+
+.right-header img {
+    max-width: 100%;
+}
+
+.header-img {
+    width: 60px;
+}
+
+.left-header {
+    flex-direction: column;
+}
+
+.left-header img {
+    width: 600px;
+}
+
+
+/* pro */
+.main-product {
+    max-width: 1200px;
+    flex-direction: column;
+}
+
+.products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 40px;
+    align-content: center;
+}
+
+.p-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.p-items p {
+    margin: 6px 0;
+    color: red;
+}
+
+.p-items img {
+    width: 250px;
+}
+
+.sec-title {
+    padding: 10px 60px;
+    border-radius: 200px;
+    background-color: #e6e6e6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+.text h4 {
+    text-align: center;
+    color: white;
+}
+
+.containtr {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    width: 550px;
+    height: 550px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    /* backdrop-filter: blur(20px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    box-shadow: 5px 10px 30px rgb(63, 63, 63);
+}
+
+.containtr.active-pop {
+    transform: scale(1);
+}
+
+.close img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+
+}
+
+.box {
+    width: 100%;
+    padding: 40px;
+}
+
+.login h2 {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin: 40px 0;
+    top: -8px;
+
+}
+
+.inputs label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.inputs input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    color: rgb(80, 78, 78);
+    font-size: 20px;
+
+}
+
+.inputs input:focus~label {
+    top: -2px;
+}
+
+.remamber {
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remamber label {
+    accent-color: rgb(80, 78, 78);
+}
+
+.remamber a {
+    color: black;
+    text-decoration: none;
+}
+
+.remamber a:hover {
+    color: black;
+}
+
+#btn1 {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--primary-color-light);
+    color: black;
+    /* margin-top: 20px; */
+}
+
+#pera {
+    margin-top: 20px;
+}
+
+#or {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.contaner2 {
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+}
+
+.gola a {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    margin: 30px;
+    padding-left: 25px;
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+}
+
+/* sing up  */
+
+.containtr1 {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    width: 550px;
+    height: 400px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    /* backdrop-filter: blur(20px); */
+    /* box-shadow: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    box-shadow: 5px 10px 30px rgb(63, 63, 63);
+}
+
+.containtr1.active-pop {
+    transform: scale(1);
+}
+
+.close1 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+
+}
+
+.box1 {
+    width: 100%;
+    padding: 40px;
+}
+
+.login1 h2 {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+
+}
+
+.inputs1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin: 40px 0;
+    top: -8px;
+
+}
+
+.inputs1 label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.inputs1 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    color: rgb(80, 78, 78);
+    font-size: 20px;
+
+}
+
+.inputs1 input:focus~label {
+    top: -2px;
+}
+
+.remamber1 {
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.remamber1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.remamber1 a:hover {
+    color: black;
+}
+
+#btn1 {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #20affc;
+    color: black;
+    /* margin-top: 20px; */
+}
+
+/* payment */
+.containtr3 {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    width: 550px;
+    height: 550px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    /* backdrop-filter: blur(20px); */
+    /* box-shadow: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    box-shadow: 5px 10px 30px rgb(63, 63, 63);
+}
+
+.containtr3.active-pop {
+    transform: scale(1);
+}
+
+.close3 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+
+}
+
+.box3 {
+    width: 100%;
+    padding: 40px;
+}
+
+.login3 h2 {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+
+}
+
+.inputs3 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin: 40px 0;
+    top: -8px;
+
+}
+
+.inputs3 label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.inputs3 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    color: rgb(80, 78, 78);
+    font-size: 20px;
+
+}
+
+.inputs3 input:focus~label {
+    top: -2px;
+}
+
+#pay {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--primary-color-light);
+    color: black;
+    /* margin-top: 20px; */
+}

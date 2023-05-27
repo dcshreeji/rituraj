@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <div class="body1 ">
+        <nav class="container">
+
+            <div class="main-nav flex">
+                <div class="nav-left flex">
+                    <a href="#" class="company-logo">
+                        <img src="screen.png" alt="">
+                    </a>
+                </div>
+
+                <div class="nav-right">
+                    <ul class="flex nav-links">
+
+                        <li><a href="#" class="hover-links active">Product<i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li><a href="#" class="hover-links active">Category<i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li><a href="#" class="hover-links active">Find Nearby<i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li><a href="#" class="hover-links active">Help</a></li>
+                        <li><a href="#" class="hover-links sec-btn" onclick="toggle()">Log in</a></li>
+                        <li><a href="#" class="hover-links primary-btn" onclick="toggle()">Sign up</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- hero -->
+        <section>
+            <div class="container flex  header">
+
+                <div class="right-header flex">
+                    <h1>All your tech items at one Place.</h1>
+                    <p>All your tech items at one Place.</p>
+                    <a href="#" class="primary-btn sing-btn" onclick="toggle()">Sign up now<i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="left-header">
+
+                    <img src="girl1.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- product -->
+        <section>
+            <div class="main-product container flex">
+                <div class="sec-title">
+                    <h3>Products</h3>
+                </div>
+                <div class="products container flex">
+                    <div class="p-items">
+                        <img src="internet.jpg" alt="">
+                        <h4>Internet on Things</h4>
+                        <p>Rs.600.00</p>
+                        <a href="#" class="p-btn pay-btn">By Now</a>
+                    </div>
+                    <div class="p-items">
+                        <img src="vlsi.jpg" alt="">
+                        <h4>VLSI Design</h4>
+                        <p>Rs.340.00</p>
+                        <a href="#" class="p-btn pay-btn1">By Now</a>
+                    </div>
+                    <div class="p-items">
+                        <img src="power.jpg" alt="">
+                        <h4>Power System 1</h4>
+                        <p>Rs.250.00</p>
+                        <a href="#" class="p-btn pay-btn2">By Now</a>
+                    </div>
+                    <div class="p-items">
+                        <img src="machine.jpg" alt="">
+                        <h4>Machanics</h4>
+                        <p>Rs.450.00</p>
+                        <a href="#" class="p-btn pay-btn3">By Now</a>
+                    </div>
+                    <div class="p-items">
+                        <img src="design.jpg" alt="">
+                        <h4>Machine Design</h4>
+                        <p>Rs.150.00</p>
+                        <a href="#" class="p-btn pay-btn4">By Now</a>
+                    </div>
+                    <div class="p-items">
+                        <img src="control.jpg" alt="">
+                        <h4>Control System</h4>
+                        <p>Rs.400.00</p>
+                        <a href="#" class="p-btn pay-btn5">By Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="text container flex">
+                <h4>This Website is created by DGR</h4>
+            </div>
+        </footer>
+    </div>
+    <div class="containtr">
+        <div class="close" onclick="toggle1()">
+            <img src="close.png" alt="">
+        </div>
+        <div class="box">
+            <div class="login">
+                <h2>Login</h2>
+            </div>
+            <div class="inputs">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputs">
+                <input type="Password" required>
+                <label>Password</label>
+            </div>
+            <div class="remamber">
+                <label><input type="checkbox">Remind me</label>
+                <a href="#">Forget Password?</a>
+            </div>
+            <button id="btn1" type="submit">Login</button>
+            <h1 id="or">Or</h1>
+            <div class="contaner2">
+                <div class="gola">
+                    <a href="https://www.google.co.in">
+                        <img src="google.png" alt="">
+                    </a>
+                </div>
+                <div class="gola">
+                    <a href="https://www.facebook.com">
+                        <img src="facebook.png" alt="">
+                    </a>
+                </div>
+                <div class="gola">
+                    <a href="https://www.linkedin.com">
+                        <img src="linkdin.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const containtr = document.querySelector('.containtr');
+        const btn = document.querySelector('.sec-btn');
+        const close1 = document.querySelector('.close');
+
+        btn.addEventListener('click', () => {
+            containtr.classList.add('active-pop');
+        });
+        close1.addEventListener('click', () => {
+            containtr.classList.remove('active-pop');
+        });
+
+    </script>
+
+    <div class="containtr1">
+        <div class="close1">
+            <img src="close.png" alt="">
+        </div>
+        <div class="box1">
+            <div class="login1">
+                <h2>Sign in</h2>
+            </div>
+            <div class="inputs1">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputs1">
+                <input type="Password" required>
+                <label>Password</label>
+            </div>
+            <div class="remamber1">
+
+                <a href="#">Forget Password?</a>
+            </div>
+            <button id="btn1" type="submit">Sing in</button>
+
+
+        </div>
+    </div>
+    <script>
+        const containtr1 = document.querySelector('.containtr1');
+        const btn0 = document.querySelector('.primary-btn');
+        const btn1 = document.querySelector('.sing-btn');
+        const close2 = document.querySelector('.close1');
+
+        btn1.addEventListener('click', () => {
+            containtr1.classList.add('active-pop');
+        });
+        btn0.addEventListener('click', () => {
+            containtr1.classList.add('active-pop');
+        });
+
+        close2.addEventListener('click', () => {
+            containtr1.classList.remove('active-pop');
+        });
+    </script>
+    <div class="containtr3">
+        <div class="close3">
+            <img src="close.png" alt="">
+        </div>
+        <div class="box3">
+            <div class="login3">
+                <h2>Payment Now</h2>
+            </div>
+            <div class="inputs3">
+                <input type="number" required>
+                <label>card Number</label>
+            </div>
+            <div class="inputs3">
+                <input type="text" required>
+                <label>Cardholder Name</label>
+            </div>
+            <div class="inputs3">
+                <input type="text" required placeholder="MM/YY">
+                <label>Expiry Date</label>
+            </div>
+            <div class="inputs3">
+                <input type="number" required>
+                <label>CVV</label>
+            </div>
+            <button id="pay" type="submit">Pay Now</button>
+
+
+        </div>
+    </div>
+    <script>
+        const containtr3 = document.querySelector('.containtr3');
+        const btn3 = document.querySelector('.pay-btn');
+        const btn4 = document.querySelector('.pay-btn1');
+        const btn5 = document.querySelector('.pay-btn2');
+        const btn6 = document.querySelector('.pay-btn3');
+        const btn7 = document.querySelector('.pay-btn4');
+        const btn8 = document.querySelector('.pay-btn5');
+        const close3 = document.querySelector('.close3');
+        const ok = document.getElementById('pay');
+
+        btn3.addEventListener('click', () => {
+            containtr3.classList.add('active-pop');
+        });
+        btn4.addEventListener('click', () => {
+            containtr3.classList.add('active-pop');
+        });
+        btn5.addEventListener('click', () => {
+            containtr3.classList.add('active-pop');
+        });
+        btn6.addEventListener('click', () => {
+            containtr3.classList.add('active-pop');
+        });
+        btn7.addEventListener('click', () => {
+            containtr3.classList.add('active-pop');
+        });
+        btn8.addEventListener('click', () => {
+            containtr3.classList.add('active-pop');
+        });
+        close3.addEventListener('click', () => {
+            containtr3.classList.remove('active-pop');
+        });
+
+        ok.onclick = function () {
+            alert('You have buy successfully')
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
